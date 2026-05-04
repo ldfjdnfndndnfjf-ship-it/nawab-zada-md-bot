@@ -49,9 +49,9 @@ app.get('/', (req, res) => {
 // Pairing Endpoint
 app.get('/pair', async (req, res) => {
     let num = req.query.number;
-    if (!num) return res.send("number toh likhyn!");
+    if (!num) return res.send("Jani number toh likho!");
     // Logic for pairing will be handled in startNawabBot() via logs or terminal
-    res.send(`<h2>🦅 Connection Request Sent!</h2><p>Dear, apne WhatsApp notifications check karo ya logs dekho code ke liye!</p>`);
+    res.send(`<h2>🦅 Connection Request Sent!</h2><p>Jani, apne WhatsApp notifications check karo ya logs dekho code ke liye!</p>`);
 });
 
 app.listen(port, () => console.log(`Dashboard active on port ${port}`));
